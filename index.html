@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e560ebcdd2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logologo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I am <span>Uzo!!</span><br>Welcome to <br>my page. </h1>
+            </div>
+        </div>
+    </div>
+    <!-- <---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Headshot.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>
+                        As a passionate technology enthusiast with 2 years of hands-on
+                        experience in HTML, CSS, JavaScript, and Java, I thrive in dynamic,
+                        fast-paced work environments. My proficiency in front-end development
+                        and a strong grasp of Agile methodologies and SDLC enable me to create
+                        high-quality software solutions that precisely meet client requirements
+                        and exceed expectations. With a keen eye for business opportunities and
+                        a strategic mindset, I empower organizations to make data-driven decisions,
+                        driving growth and achieving success. As a versatile professional, my
+                        technical expertise and collaborative nature allow me to approach projects
+                        from multiple angles, building engaging and user-friendly applications
+                        that enhance user experiences. Additionally, my analytical skills help
+                        optimize processes and drive efficiency. Committed to innovation and
+                        continuous learning, I embrace new challenges and eagerly contribute
+                        to cutting-edge solutions in a collaborative team setting.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Programming Languages</span><br>HTML, CSS, JavaScript, Java</li>
+                            <li><span>DBMS</span><br>MySQL, MongoDB</li>
+                            <li><span>API</span><br>Designing Web/ App Interfaces</li>
+                            <li><span>Agile Methodologies</span><br>SDLC, Agile, Jira, MS-Visio</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Public Health Outreach Analyst</li>
+                            <li><span>2021 - 2022</span><br>Public Health Outreach Coordinator</li>
+                            <li><span>2018 - 2021</span><br>Healthcare Management Analyst</li>
+
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>LC101 Full Stack Developer Bootcamp-LaunchCode</li>
+                            <li><span>2018</span><br>M.P.H-Liberty University</li>
+                            <li><span>2013</span><br>B.S -Liberty University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Impedit expedita quam obcaecati deleniti adipisci, molestias
+                        doloribus, laborum quasi numquam quaerat quidem accusamus amet
+                        porro ex cumque, reprehenderit exercitationem cupiditate ut.
+                    </p> -->
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-display"></i>
+                    <h2>Front-end development</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Impedit expedita quam obcaecati deleniti adipisci, molestias
+                        doloribus, laborum quasi numquam quaerat quidem accusamus amet
+                        porro ex cumque, reprehenderit exercitationem cupiditate ut.
+                    </p> -->
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Impedit expedita quam obcaecati deleniti adipisci, molestias
+                        doloribus, laborum quasi numquam quaerat quidem accusamus amet
+                        porro ex cumque, reprehenderit exercitationem cupiditate ut.
+                    </p> -->
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <--------------------Portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Launch-Checklist.png">
+                    <div class="layer">
+                        <h3>Launch Checklist Form</h3>
+                        <p>This form is a checklist for an astronaut 
+                            to use to check the fuel level status 
+                            and cargo to see if it meets the standard 
+                            required to launch.
+                        </p>
+                        <a href="https://uzoikejiofor.github.io/js-assignment-5-launch-checklist-UzoIkejiofor/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Digital-Clock.png">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>This Digital clock tells the current 
+                            time in hours, minutes and seconds
+                        </p>
+                        <a href="https://uzoikejiofor.github.io/Digital-Clock/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Music-Player.png">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>This is a music player</p>
+                        <a href="https://uzoikejiofor.github.io/MusicPlayer_Flavour_GameChanger/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> uzoikejiofor@gmail.com</p>
+                    <p> <i class="fa-solid fa-mobile-screen-button"></i> 917-573-0130</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/uzo-ikejiofor-08b07b9b/"><i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://github.com/UzoIkejiofor"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/uztechi90"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/PASoftwareDeveloper.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Uzo.I </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+   
+
+</body>
+
+</html>
