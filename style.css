@@ -17,7 +17,7 @@ body{
 #header{
     width:100%;
     height: 100vh;
-    background-image: url(images/NavyBG.png);
+    background-image: url(images/SDBG.png);
     border-radius: 0%;
     background-size:cover;
     background-position: center;
@@ -370,13 +370,14 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #header{
-        background-image: url(images/NavyBG.png);
+        background-image: url(images/SDBG.png);
+        
     }
     .header-text{
         margin-top: 100%;
-        font-size:16px;
+        font-size:14px;
     }
     .header-text h1{
         font-size: 30px;
