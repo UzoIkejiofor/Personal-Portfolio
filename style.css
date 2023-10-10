@@ -370,17 +370,25 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     #header{
         background-image: url(images/SDBG.png);
-        
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        display:flex;
+        justify-content:center;
+        align-items: center;   
     }
     .header-text{
         margin-top: 100%;
         font-size:14px;
     }
-    .header-text h1{
+    .header-text p h1{
+        margin: top 15px;
         font-size: 30px;
+        display:flex;
+        justify-content: center;
 
     }
     nav .fa-solid{
