@@ -370,8 +370,9 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px ){
     #header{
+        min-width: 300px;
         background-image: url(images/SDBG.png);
         background-size: cover;
         height: 100%;
